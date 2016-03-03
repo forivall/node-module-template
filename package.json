@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:forivall/errmsg.git"
+    "url": "git@github.com:forivall/$NAME.git"
   },
   "xo": {
     "space": 2,
