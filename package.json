@@ -41,6 +41,13 @@
           "allowSingleLine": true
         }
       ],
+      "eqeqeq": [
+        2,
+        "smart"
+      ],
+      "no-eq-null": [
+        0
+      ],
       "no-use-before-define": [
         1
       ]
