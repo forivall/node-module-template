@@ -1,65 +1,51 @@
 {
   "name": "$NAME",
-  "description": "$DESCRIPTION",
   "version": "0.0.0",
-  "dependencies": {},
+  "description": "$DESCRIPTION",
+  "license": "ISC",
+  "author": "Jordan Klassen <forivall@gmail.com>",
+  "homepage": "https://github.com/forivall/$NAME",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:forivall/$NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forivall/$NAME/issues"
+  },
   "scripts": {
-    "lint": "xo './!(node_modules|test)/**' *",
+    "lint": "xo",
+    "lint-staged": "lint-staged",
     "inspect": "jsinspect",
-    "posttest": "npm run lint && npm run inspect",
     "test": "ava",
+    "posttest": "npm run lint && npm run inspect",
     "test-cov": "nyc ava",
     "posttest-cov": "npm run posttest",
     "test-ci": "npm run test-cov",
     "posttest-ci": "nyc report --reporter=text-lcov | coveralls"
   },
+  "keywords": [],
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
-  "author": "Jordan Klassen <forivall@gmail.com>",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.15.1",
-    "coveralls": "^2.11.9",
+    "ava": "^0.16.0",
+    "coveralls": "^2.11.12",
+    "eslint-config-mxo": "^0.2.0",
     "jsinspect": "^0.8.0",
-    "nyc": "^6.4.4",
-    "xo": "^0.15.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:forivall/$NAME.git"
+    "nyc": "^8.1.0",
+    "xo": "^0.16.0"
   },
   "xo": {
-    "space": 2,
-    "rules": {
-      "curly": [
-        2,
-        "multi-line",
-        "consistent"
-      ],
-      "brace-style": [
-        2,
-        "1tbs",
-        {
-          "allowSingleLine": true
-        }
-      ],
-      "eqeqeq": [
-        2,
-        "smart"
-      ],
-      "no-eq-null": [
-        0
-      ],
-      "no-use-before-define": [
-        1
-      ]
-    },
+    "extends": [
+      "mxo"
+    ],
     "overrides": [
       {
         "files": "test/**",
-        "esnext": true,
-        "semicolon": false
+        "extends": [
+          "mxo/ava"
+        ]
       }
     ]
   }
