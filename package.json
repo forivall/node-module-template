@@ -28,13 +28,15 @@
     "registry": "http://registry.npmjs.org"
   },
   "dependencies": {},
+  "bundledDependencies": [],
+  "peerDependencies": {},
   "devDependencies": {
     "ava": "^0.16.0",
-    "coveralls": "^2.11.12",
-    "eslint-config-mxo": "^0.2.0",
+    "coveralls": "^2.11.14",
+    "eslint-config-mxo": "^0.4.0",
     "jsinspect": "^0.8.0",
-    "nyc": "^8.1.0",
-    "xo": "^0.16.0"
+    "nyc": "^8.3.1",
+    "xo": "^0.17.0"
   },
   "xo": {
     "extends": [
@@ -42,7 +44,15 @@
     ],
     "overrides": [
       {
-        "files": "test/**",
+        "files": [
+          "test/**",
+          "test.js",
+          "test-*.js",
+          "**/__tests__/**",
+          "**/*.test.js",
+          "!**/fixtures/**",
+          "!**/helpers/**"
+        ],
         "extends": [
           "mxo/ava"
         ]
