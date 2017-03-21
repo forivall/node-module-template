@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "$DESCRIPTION",
   "license": "ISC",
-  "author": "Jordan Klassen <forivall@gmail.com>",
+  "author": "Emily Marigold Klassen <forivall@gmail.com>",
   "homepage": "https://github.com/forivall/$NAME",
   "repository": {
     "type": "git",
@@ -31,12 +31,12 @@
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.18.2",
     "coveralls": "^2.11.14",
     "eslint-config-mxo": "^0.4.0",
-    "jsinspect": "^0.8.0",
-    "nyc": "^8.3.1",
-    "xo": "^0.17.0"
+    "jsinspect": "^0.10.1",
+    "nyc": "^10.1.2",
+    "xo": "^0.18.0"
   },
   "xo": {
     "extends": [
