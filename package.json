@@ -42,6 +42,9 @@
     "extends": [
       "mxo"
     ],
+    "ignores": [,
+      "**/fixtures/**"
+    ],
     "overrides": [
       {
         "files": [
@@ -49,9 +52,7 @@
           "test.js",
           "test-*.js",
           "**/__tests__/**",
-          "**/*.test.js",
-          "!**/fixtures/**",
-          "!**/helpers/**"
+          "**/*.test.js"
         ],
         "extends": [
           "mxo/ava"
