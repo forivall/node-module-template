@@ -1,5 +1,5 @@
 {
-  "name": "$NAME",
+  "name": "node-module-template",
   "version": "0.0.0",
   "description": "$DESCRIPTION",
   "license": "ISC",
@@ -31,11 +31,11 @@
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
-    "ava": "^0.18.2",
+    "ava": "^0.20.0",
     "coveralls": "^2.11.14",
-    "eslint-config-mxo": "^0.4.0",
-    "jsinspect": "^0.10.1",
-    "nyc": "^10.1.2",
+    "eslint-config-mxo": "^0.5.3",
+    "jsinspect": "^0.12.6",
+    "nyc": "^11.0.3",
     "xo": "^0.18.0"
   },
   "xo": {
