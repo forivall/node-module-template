@@ -2,34 +2,29 @@
   "name": "node-module-template",
   "version": "0.0.0",
   "description": "$DESCRIPTION",
+  "keywords": [],
+  "homepage": "https://github.com/forivall/$NAME",
+  "bugs": {
+    "url": "https://github.com/forivall/$NAME/issues"
+  },
   "license": "ISC",
   "author": "Emily Marigold Klassen <forivall@gmail.com>",
-  "homepage": "https://github.com/forivall/$NAME",
   "repository": {
     "type": "git",
     "url": "git@github.com:forivall/$NAME.git"
   },
-  "bugs": {
-    "url": "https://github.com/forivall/$NAME/issues"
-  },
   "scripts": {
+    "inspect": "jsinspect",
     "lint": "xo",
     "lint-staged": "lint-staged",
-    "inspect": "jsinspect",
     "test": "ava",
     "posttest": "npm run lint && npm run inspect",
-    "test-cov": "nyc ava",
-    "posttest-cov": "npm run posttest",
     "test-ci": "npm run test-cov",
-    "posttest-ci": "nyc report --reporter=text-lcov | coveralls"
-  },
-  "keywords": [],
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "posttest-ci": "nyc report --reporter=text-lcov | coveralls",
+    "test-cov": "nyc ava",
+    "posttest-cov": "npm run posttest"
   },
   "dependencies": {},
-  "bundledDependencies": [],
-  "peerDependencies": {},
   "devDependencies": {
     "ava": "^0.20.0",
     "coveralls": "^2.11.14",
@@ -37,6 +32,11 @@
     "jsinspect": "^0.12.6",
     "nyc": "^11.0.3",
     "xo": "^0.18.0"
+  },
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   },
   "xo": {
     "extends": [
