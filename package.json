@@ -14,11 +14,10 @@
   "license": "ISC",
   "author": "Emily Marigold Klassen <forivall@gmail.com>",
   "scripts": {
-    "inspect": "jsinspect",
     "lint": "xo",
     "lint-staged": "lint-staged",
     "test": "ava",
-    "posttest": "npm run lint && npm run inspect",
+    "posttest": "npm run lint",
     "test-ci": "npm run test-cov",
     "posttest-ci": "nyc report --reporter=text-lcov | coveralls",
     "test-cov": "nyc ava",
@@ -29,7 +28,6 @@
     "ava": "^1.2.0",
     "coveralls": "^3.0.2",
     "eslint-config-mxo": "^0.7.0",
-    "jsinspect": "^0.12.7",
     "nyc": "^13.1.0",
     "xo": "^0.24.0"
   },
