@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "composite": false,
+  "references": [
+    {
+      "path": "./src"
+    }
+  ],
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "src/**/*"
+  ]
+}

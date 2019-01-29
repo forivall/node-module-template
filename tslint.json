@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint-xo/space",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "comment-format": false,
+    "no-single-line-block-comment": false,
+    "variable-name": [
+      true,
+      "check-format",
+      "ban-keywords",
+      "allow-leading-underscore",
+      "allow-trailing-underscore"
+    ],
+    "early-exit": {
+      "severity": "warn"
+    },
+    "curly": [true, "ignore-same-line"],
+    "type-literal-delimiter": false,
+    "triple-equals": [true, "allow-null-check"],
+    "no-non-null-assertion": false,
+    "no-unused": false,
+    "strict-type-predicates": {
+      "severity": "warn"
+    },
+    "no-unnecessary-type-assertion": {
+      "severity": "warn"
+    },
+    "underscore-consistent-invocation": {
+      "severity": "warn"
+    }
+  }
+}
