@@ -3,4 +3,6 @@ sudo: false
 node_js:
   - '6'
   - '8'
+  - '10'
+  - '11'
 script: npm run test-ci
