@@ -7,12 +7,12 @@
   "bugs": {
     "url": "https://github.com/forivall/$NAME/issues"
   },
-  "license": "ISC",
-  "author": "Emily Marigold Klassen <forivall@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:forivall/$NAME.git"
   },
+  "license": "ISC",
+  "author": "Emily Marigold Klassen <forivall@gmail.com>",
   "scripts": {
     "inspect": "jsinspect",
     "lint": "xo",
@@ -45,6 +45,20 @@
     "ignores": [
       "**/fixtures/**"
     ],
+    "overrides": [
+      {
+        "files": [
+          "test/**",
+          "test.js",
+          "test-*.js",
+          "**/__tests__/**",
+          "**/*.test.js"
+        ],
+        "extends": [
+          "mxo/ava"
+        ]
+      }
+    ],
     "rules": {
       "import/no-extraneous-dependencies": [
         "error",
@@ -59,20 +73,6 @@
           ]
         }
       ]
-    },
-    "overrides": [
-      {
-        "files": [
-          "test/**",
-          "test.js",
-          "test-*.js",
-          "**/__tests__/**",
-          "**/*.test.js"
-        ],
-        "extends": [
-          "mxo/ava"
-        ]
-      }
-    ]
+    }
   }
 }
