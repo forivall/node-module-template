@@ -26,12 +26,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.20.0",
-    "coveralls": "^2.11.14",
-    "eslint-config-mxo": "^0.5.3",
-    "jsinspect": "^0.12.6",
-    "nyc": "^11.0.3",
-    "xo": "^0.18.0"
+    "ava": "^1.2.0",
+    "coveralls": "^3.0.2",
+    "eslint-config-mxo": "^0.7.0",
+    "jsinspect": "^0.12.7",
+    "nyc": "^13.1.0",
+    "xo": "^0.24.0"
   },
   "peerDependencies": {},
   "bundledDependencies": [],
